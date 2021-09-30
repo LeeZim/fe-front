@@ -21,24 +21,24 @@
     ],
     "rules": {
       "vue/no-multiple-template-root": "off",
-      "import/no-unresolved": "error",
-      // "import/no-unresolved": "off",
+      // "import/no-unresolved": "error",
+      "import/no-unresolved": "off",
       "import/extensions": "off",
       "no-param-reassign": "off",
       "no-console": "off"
-    },
-    "settings": {
-      "import/parsers": {
-        "@typescript-eslint/parser": [
-          ".ts",
-          ".tsx"
-        ]
-      },
-      "import/resolver": {
-        "typescript": {
-          "alwaysTryTypes": true,
-          "project": ["./tsconfig.json"]
-        }
-      }
     }
+    // "settings": {
+    //   "import/parsers": {
+    //     "@typescript-eslint/parser": [
+    //       ".ts",
+    //       ".tsx"
+    //     ]
+    //   },
+    //   "import/resolver": {
+    //     "typescript": {
+    //       "alwaysTryTypes": true,
+    //       "project": ["packages/*/tsconfig.json"]
+    //     }
+    //   }
+    // }
 }
