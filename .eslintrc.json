@@ -4,9 +4,11 @@
         "es2021": true,
         "node": true
     },
+    // "parser": "vue-eslint-parser",
     "extends": [
         "plugin:vue/essential",
         "airbnb-base",
+        // "airbnb-typescript/base",
         "plugin:prettier/recommended"
     ],
     "parserOptions": {
@@ -21,24 +23,9 @@
     ],
     "rules": {
       "vue/no-multiple-template-root": "off",
-      // "import/no-unresolved": "error",
       "import/no-unresolved": "off",
       "import/extensions": "off",
       "no-param-reassign": "off",
       "no-console": "off"
     }
-    // "settings": {
-    //   "import/parsers": {
-    //     "@typescript-eslint/parser": [
-    //       ".ts",
-    //       ".tsx"
-    //     ]
-    //   },
-    //   "import/resolver": {
-    //     "typescript": {
-    //       "alwaysTryTypes": true,
-    //       "project": ["packages/*/tsconfig.json"]
-    //     }
-    //   }
-    // }
 }
