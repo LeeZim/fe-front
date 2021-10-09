@@ -26,5 +26,12 @@ export default defineConfig({
     //     rewrite: (path) => path.replace('/api/', '/')
     //   }
     // }
+  },
+  css: {
+    preprocessorOptions: {
+      stylus: {
+        additionalData: `@import "${resolve(__dirname, 'src')}/style/index.styl"`
+      }
+    }
   }
 })
