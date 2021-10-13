@@ -1,0 +1,22 @@
+grid($display = flex, $flex-direction = null, $flex-wrap = null, $flex-flow = null, $justify-content = null, $align-items = null, $align-content = null, $gutter = null, $grid-type = skeleton)
+  display $display
+  flex-direction $flex-direction
+  flex-wrap $flex-wrap
+  flex-flow $flex-flow
+  justify-content $justify-content
+  align-items $align-items
+  align-content $align-content
+  gutter $gutter
+  grid-type $grid-type
+
+bgColor($color = $background-color-primary)
+  background-color: $color
+
+[box-center]
+  grid($align-items: center,$justify-content: center)
+
+b(side, args)
+  if side
+    border-{side} args
+  else
+    border args

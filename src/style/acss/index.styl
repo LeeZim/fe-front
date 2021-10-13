@@ -1,0 +1,77 @@
+/* color
+---------------------------- */
+$colors = {
+  primary: $color-text-primary
+  secondary: $color-text-secondary
+  tertiary: $color-text-tertiary
+  quaternary: $color-text-quaternary
+}
+for key, color in $colors
+  [color-{key}]
+    color: color
+
+[bgWhite]
+  background-color: $color-white
+
+/* radius
+---------------------------- */
+[circle]
+  border-radius: 50%
+
+for i in 1..5
+  [radius{i}]
+    border-radius: i px
+
+
+/* font-size
+---------------------------- */
+for i in 1..30
+  [fz{i}]
+    font-size: i px
+
+
+/* bga
+---------------------------- */
+// 黑色透明背景
+for i in 1..10
+  [bga{i}]
+    background-color: rgba(0, 0, 0, i * 0.1)
+
+
+/* ellipsis
+---------------------------- */
+for i in 1..10
+  [ellipsis{i}]
+    text-overflow: ellipsis
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: i
+    -webkit-box-orient: vertical
+
+
+/* margin & padding
+---------------------------- */
+$mp = {
+  m: margin
+  p: padding
+}
+$mp-directions = {
+  r: right
+  l: left
+  t: top
+  b: bottom
+}
+for i in 1..30
+  for key1, value1 in $mp
+    for key2, value2 in $mp-directions
+      [{key1}{key2}{i}]
+        {value1}-{value2}: i px
+    [{key1}a{i}]
+      {value1}: i px
+    [{key1}h{i}]
+      {value1}-left: i px
+      {value1}-right: i px
+    [{key1}v{i}]
+      {value1}-top: i px
+      {value1}-bottom: i px
+

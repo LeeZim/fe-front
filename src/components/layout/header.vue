@@ -1,5 +1,7 @@
 <template>
-  <div class="header bgColor">HEADER</div>
+  <div class="header bgColor">
+    <slot></slot>
+  </div>
 </template>
 
 <script lang="ts">
@@ -10,7 +12,6 @@ export default {
 
 <style scoped>
 .header {
-  background-color: red;
   width: 100%;
   top: 0;
   position: fixed;

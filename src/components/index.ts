@@ -1,12 +1,10 @@
 import { App, Component } from 'vue'
-import { aside, header, footer, main, layout } from './layout'
+import * as layout from './layout'
+import * as publicComponents from './public'
 
 const components: { [key: string]: Component } = {
-  aside,
-  header,
-  footer,
-  main,
-  layout
+  ...layout,
+  ...publicComponents
 }
 
 const install = (app: App) => {
