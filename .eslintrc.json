@@ -26,6 +26,8 @@
       "import/no-unresolved": "off",
       "import/extensions": "off",
       "no-param-reassign": "off",
-      "no-console": "off"
+      "no-console": "off",
+      "vue/valid-v-for": "off",
+      "vue/no-unused-vars": "off"
     }
 }

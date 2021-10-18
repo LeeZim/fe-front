@@ -6,7 +6,7 @@
 
 <script lang="ts">
 export default {
-  name: 'L-layout',
+  name: 'Llayout',
   props: {
     horizontal: {
       default: false,

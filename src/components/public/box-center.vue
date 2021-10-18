@@ -12,7 +12,6 @@ export default {
 
 <style lang="stylus">
 .c-box-center
-  width: 100px
-  height: 100px
-  bgColor(#123456)
+  bgColor(#fff)
+  b('right', $border-base)
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="header bgColor">
+  <div class="header">
     <slot></slot>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'L-header'
+  name: 'Lheader'
 }
 </script>
 

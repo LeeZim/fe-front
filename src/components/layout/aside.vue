@@ -1,10 +1,12 @@
 <template>
-  <div class="aside">ASIDE</div>
+  <div class="aside">
+    <slot></slot>
+  </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'L-aside'
+  name: 'Laside'
 }
 </script>
 

@@ -19,11 +19,11 @@ export default defineConfig({
 
     // 设置代理，根据我们项目实际情况配置
     // proxy: {
-    //   '/api': {
-    //     target: 'http://xxx.xxx.xxx.xxx:8000',
+    //   '/test': {
+    //     target: 'http://robot.test.jikefx.cn/cusclues.php?c1c891d50a00e6ebf45fea28d720d28b',
     //     changeOrigin: true,
     //     secure: false,
-    //     rewrite: (path) => path.replace('/api/', '/')
+    //     rewrite: (path) => path.replace('/test/', '/')
     //   }
     // }
   },

@@ -13,4 +13,5 @@ export default {
 <style lang="stylus">
 .c-single-center
   grid($align-items: center)
+  height: 100%
 </style>

@@ -1,0 +1,29 @@
+$launch-height = 30px
+
+.c-box-skin
+  height: 50px
+  width: 100%
+  &--bgColor
+    bgColor(white)
+
+.launch-logo
+  width: $launch-height
+  height: $launch-height
+
+.launch-download
+  height: $launch-height
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &-star
+    display: flex
+    align-items: baseline
+
+
+.launch-button
+  width: 75px
+  height: $launch-height - 5
+  bgColor($color-primary)
+  justify-content: center
+  color: $color-white
+  margin-left: 1.5rem
